@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* hero-main -> logo-component / center-main / navbar*/
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-main {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 90vw;
+}
+
+/*-------------------------- logo - component -------------------------- */
+.logo-component {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 10%;
+}
+
+.logo-component img{
+    position: absolute;
+    top: 0px;
+    height: 80px;
+    width: 80px;
+
+}   
+
+.bar-anime {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 10%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#bar1 {
+    height: 30%;
+    animation: bar1 5s ease-in-out infinite alternate;
+}
+
+@keyframes bar1 {
+    0% {
+        background-color: rgb(0, 0, 0);
+        width: 14%;
+    }
+    100%
+    {
+        width: 11%;
+        background-color: rgb(200, 200, 200);
+    }
+}
+
+#bar2 {
+    height: 30%;
+    animation: bar2 5s ease-in-out infinite alternate;
+}
+
+@keyframes bar2 {
+    0% {
+        background-color: rgb(200, 200, 200);
+        width: 11%;
+    }
+    100%
+    {
+        background-color: black;
+        width: 14%;
+    }
+}
+
+
+/*-------------------------- center-main -------------------------- */
+.center-main {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 80%;
+    
+}
+
+.hero-img {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 80%;
+    background-size: cover;
+    transition: all ease-in-out 1s;
+    animation: image 5s ease-in-out infinite alternate;
+}
+
+@keyframes image {
+    0% {
+        background-image: url(./assets/hero1.jpeg);
+        
+    }
+        50% {
+            opacity: 0.1;
+        }
+    100% {
+        background-image: url(./assets/hero2.jpeg);
+        
+    }
+}
+
+.hero-sub-center {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 50px;
+    left: 0;
+    height: 50%;
+    width: 50%;
+}
+
+.hero-text h1{
+    font-size: 5rem;
+}
+.hero-text h1::after{
+    content: "";
+    font-size: 8rem;
+    transition: all ease-in-out 1s;
+    animation: text 5s ease-in-out infinite alternate;
+}
+
+@keyframes text  {
+    0% {
+        content: "Aqua";
+        margin-left: 0px;
+        
+    }
+    50% {   
+        opacity: 0;
+        margin-left: 30px;    
+    }
+    
+    100% {
+        content: "Violet";
+        margin-left: 0px;
+    }
+}
+
+.hero-para p::after{
+    content: "";
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    transition: all ease-in-out 1s;
+    animation: para 5s ease-in-out infinite alternate;
+
+}
+
+@keyframes para{
+    0% {
+        content: "As you probably already guessed this collection is dedicated to Aqua color Without a doubt, Aqua is one of the most important colors which is fresh";
+    }
+    50% {   
+        opacity: 0;   
+    }
+    100% {
+        content: "Physically. purple can have calming efects over the mind and nerves. it can be uplifting and can trigger creativity. It is the color of imagination.";
+    }
+}
+
+.btn {
+    display: flex;
+}
+
+.btn img {
+    height: 28px;
+    width: 20px;
+    margin-left: 20px;
+    animation:  arrow 1s ease-in-out infinite alternate;
+}
+
+@keyframes arrow {
+    0% {
+        margin-left: 10px;
+    }
+    100% {
+       margin-left: 0;
+    }
+}
+
+
+/*-------------------------- navbar -------------------------- */
+.navbar {
+    display: flex;
+    height: 100%;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav .hamburger .ham {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.nav .hamburger .ham:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social img {
+    height: 40px;
+    width: 40px;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+/*-------------------------------- Media queries -------------------------- */
+
