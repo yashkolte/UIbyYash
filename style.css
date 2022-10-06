@@ -21,9 +21,9 @@ body {
 }
 
 .hero-main {
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 90vh;
     width: 90vw;
 }
@@ -255,3 +255,67 @@ body {
 
 /*-------------------------------- Media queries -------------------------- */
 
+@media screen and (max-width: 800px) {
+    .logo-component {
+        width: 20%;
+    }
+
+    .logo-component img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .hero-text h1::after{
+        font-size: 3rem;
+    }
+
+    .hero-para p::after{
+        font-size: 0.8rem;
+    }
+
+    .center-main {
+        position: absolute;
+        width: 90%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+        /* margin-top: 5vh; */
+    }
+
+    .bar-anime {
+        display: none;
+    }
+
+    .hero-img {
+        opacity: 0.8;
+        top: 10%;
+        right: 0%;
+        width: 250%;
+    }
+
+    .navbar {
+        width: 20%;
+    }
+
+    .nav .hamburger{
+        margin-top: -5px;
+    }
+
+    .nav .hamburger .ham {
+        width: 15px;
+        height: 2px;
+        margin: 3px 0;
+    }
+
+    .social img {
+        opacity: 0.7;
+    }
+
+
+
+
+
+
+
+
+  }
