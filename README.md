@@ -1,4 +1,4 @@
-# UI Design 
+# XI Portfolio UI Design 
 
 This design is created for showing interest in UI design. It is not a real project.
 But it is a good example of how to use the design system.
